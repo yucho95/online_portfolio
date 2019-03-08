@@ -1,0 +1,475 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx");
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* =======================================================
+*
+* 	Template Style 
+*
+* ======================================================= */
+body {
+  font-family: "Roboto", Arial, serif;
+  line-height: 1.8;
+  font-size: 20px;
+  font-weight: 300;
+  min-height: 100%;
+}
+
+a {
+  color: #a50000;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+a:hover {
+  text-decoration: none;
+  color: #337ab7;
+}
+a:focus, a:active {
+  outline: none;
+}
+
+p, span {
+  margin-bottom: 1.5em;
+  font-size: 20px;
+  color: #727272;
+  font-weight: 300;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+}
+
+span {
+  font-size: 18px;
+  color: rgba(114, 114, 114, 0.8);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #5a5a5a;
+  font-family: "Contrail One", serif;
+  font-weight: 300;
+  margin: 0 0 30px 0;
+
+}
+
+h2 {
+  text-align: center;
+}
+
+::-webkit-selection {
+  color: #fcfcfc;
+  background: #0082F6;
+}
+
+::-moz-selection {
+  color: #fcfcfc;
+  background: #0082F6;
+}
+
+::selection {
+  color: #fcfcfc;
+  background: #0082F6;
+}
+
+.goal {
+  font-weight: 300;
+  color: #a50000;
+  margin: 0 0 30px 0;
+  font-size: 25px;
+}
+
+.btn {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+
+}
+.btn.btn-primary {
+  background: #a50000;
+  color: #fff;
+  border: none !important;
+  border: 2px solid transparent !important;
+}
+.btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
+  box-shadow: none;
+  background: #393e46;
+}
+.btn:hover, .btn:active, .btn:focus {
+  background: #393e46 !important;
+  color: #fff;
+  outline: none !important;
+}
+.btn.btn-default:hover, .btn.btn-default:focus, .btn.btn-default:active {
+  border-color: transparent;
+}
+
+.heading-section {
+  margin-bottom: 5em;
+}
+.heading-section h2 {
+  position: relative;
+  font-size: 22px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.heading-section h2:before {
+  position: absolute;
+  content: '';
+  top: -15px;
+  left: 50%;
+  margin-left: -15px;
+  width: 20px;
+  height: 3px;
+  background: #ac68cc;
+}
+
+header, #intro-section, #about, #footer,
+#work-section {
+  padding-bottom: 3em;
+}
+
+header {
+  padding-top: 2em;
+}
+header .navbar-brand {
+  padding-bottom: 1em;
+}
+
+header #main-nav > ul {
+  padding: 0;
+  margin: 0;
+}
+header #main-nav > ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 40px;
+  font-size: 18px;
+  font-family: 'Contrail One', cursive;
+
+}
+@media screen and (max-width: 768px) {
+  header #main-nav > ul li {
+    display: block;
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+}
+header #main-nav > ul li a {
+  padding-bottom: 5px;
+  color: #5a5a5a;
+  position: relative;
+  font-weight: 400;
+}
+header #main-nav > ul li a.active {
+ border-bottom: 3px solid #a50000;
+}
+header #main-nav > ul li a:hover, header #main-nav > ul li a:focus {
+  border-bottom: 3px solid #a50000;
+}
+header #main-nav > ul li:first-child {
+  margin-left: 0;
+}
+header h2{
+  font-size: 30px;
+  line-height: 1.5em;
+  margin-bottom: 20px;
+  font-family: 'Contrail One', cursive;
+  text-align: center;
+  overflow: hidden;
+  border-right: .15em solid #a50000; /*add cursor*/
+  margin: 0 auto;
+  white-space: nowrap; 
+  animation: 
+    typing 4s steps(30, end),
+    blinking-cursor 1s step-end infinite;
+  margin-bottom: 1em;
+}
+
+.intro-section h2 {
+  font-size: 25px;
+  line-height: 1.5em;
+  margin-bottom: 20px;
+  font-family: 'Contrail One', cursive;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.intro-section img{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 2em;
+}
+
+.shadow{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.shadow:hover{
+  box-shadow: 0 2px 6px 0 #B2DFEE, 0 4px 10px 0 #B2DFEE;
+}
+
+.blackshadow{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blinking-cursor {
+  from, to { border-color: transparent }
+  50% { border-color: #a50000; }
+}
+
+@media screen and (max-width: 480px) {
+  #intro-section h2 {
+    font-size: 20px;
+  }
+}
+
+
+.table,
+.table-cell,
+.parallax {
+  height: 500px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.parallax {
+  background-color: #555;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 7em;
+}
+.parallax .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: black;
+  opacity: .2;
+}
+
+@media screen and (max-width: 768px) {
+  .parallax {
+    height: inherit;
+    padding: 4em 0;
+  }
+}
+.parallax .intro h1 {
+  color: #fff;
+  font-size: 70px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  font-family: 'Contrail One', cursive;
+}
+@media screen and (max-width: 768px) {
+  .parallax .intro h1 {
+    font-size: 30px;
+  }
+}
+.parallax .intro p {
+  color: #fff;
+}
+.parallax .intro p a {
+  color: #fff;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+.parallax .intro p a:hover {
+  color: #fff;
+}
+
+.table {
+  display: table;
+}
+
+.table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.quality {
+  margin-bottom: 50px;
+}
+.quality i {
+  font-size: 60px;
+  display: block;
+  margin-bottom: 30px;
+  color: #a50000;
+}
+
+
+
+.holder-section {
+  padding-left: 100px;
+}
+.holder-section h3 {
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-weight: 20px;
+}
+
+
+.grid-work {
+  margin-bottom: 60px;
+}
+.grid-work .work-holder {
+  position: relative;
+  margin-bottom: 30px;
+}
+.grid-work .work-holder:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.grid-work .work-holder img {
+  max-width: 100%;
+  min-height:280px;
+}
+
+.grid-work .desc h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.grid-work .desc h3 a {
+  font-family: 'Contrail One', cursive;
+  color: #5a5a5a;
+}
+
+
+.about {
+  padding-bottom: 2em;
+}
+.about img {
+  margin-bottom: 50px;
+}
+.about {
+  position: relative;
+  background-size: cover;
+  margin-bottom: 30px;
+}
+.intro-about{
+  margin-bottom: 100px;
+}
+
+.contact-info {
+  margin-bottom: 4em;
+  padding: 0;
+}
+.contact-info li {
+  list-style: none;
+  margin: 0 0 20px 0;
+  position: relative;
+  padding-left: 40px;
+}
+.contact-info li i {
+  position: absolute;
+  top: .3em;
+  left: 0;
+  font-size: 22px;
+  color: #a50000;
+}
+.contact-info li a {
+  color: #a50000;
+}
+
+.form-control {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  font-weight: 300;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  border-radius: 0px;
+}
+.form-control:focus, .form-control:active {
+  box-shadow: none;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+input[type="text"] {
+  height: 50px;
+}
+
+.form-group {
+  margin-bottom: 30px;
+}
+
+.project-detail{
+  margin-bottom: 80px;
+}
+
+
+.project p{
+  max-width:80%;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.about p{
+  max-width:80%;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.low{
+  max-width:100%;
+}
+
+.project img{
+  max-width:80%;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 50px;
+}
+
+
+.eq img{
+  margin-bottom: 30px;
+}
+
+.features{
+  margin-left: 100px;
+  font-size: 20px;
+  color: #727272;
+  font-weight: 300;
+  font-family: 'Source Sans Pro', sans-serif;
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+
+
+
+
+#footer p {
+  font-size: 16px;
+}
+#footer p:last-child {
+  margin-bottom: 0;
+}
+#footer p.social-icons a:hover, #footer p.social-icons a:focus {
+  text-decoration: none !important;
+}
+#footer p.social-icons i {
+  font-size: 32px;
+}
+
+.js .animate-box {
+  opacity: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
