@@ -181,7 +181,6 @@ header h2{
   font-family: 'Contrail One', cursive;
   text-align: center;
   overflow: hidden;
-  border-right: .15em solid #a50000; /*add cursor*/
   margin: 0 auto;
   white-space: nowrap; 
   animation: 
