@@ -451,6 +451,12 @@ input[type="text"] {
   -moz-columns: 2;
 }
 
+.intro-section img{
+  max-width: 80%;
+  margin: 0 auto;
+  display: block;
+}
+
 
 
 
