@@ -455,6 +455,7 @@ input[type="text"] {
   max-width: 80%;
   margin: 0 auto;
   display: block;
+  margin-bottom: 30px;
 }
 
 
